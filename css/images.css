@@ -1,0 +1,87 @@
+/* Overrides */
+
+/**
+2B212C dkr purple
+362432 dk purple
+563757 lt purple
+728FC9 blue
+C53F0A red
+*/
+
+html.imagetext h2, html.imagetext h3 {
+  color: white;
+}
+
+html.imagetext section {
+  background-color: #362432;
+  color: white;
+}
+
+html.imagetextbig section {
+  background-color: #362432;
+  font-size: 3em;
+}
+
+html.target body {
+  background-image: url('../assets/images/target.jpg');
+}
+
+html.php body {
+    background-image: url('../assets/images/code.jpg');
+}
+
+html.files body {
+    background-image: url('../assets/images/dir.jpg');
+}
+
+html.filesshell body {
+    background-image: url('../assets/images/code-shell.jpg');
+}
+
+html.shellbrowser body {
+    background-image: url('../assets/images/shell-ui.jpg');
+}
+
+html.shell body {
+    background-image: url('../assets/images/content-in.jpg');
+}
+
+html.hacked body {
+    background-image: url('../assets/images/hacker_601.gif');
+}
+
+html.biggest body {
+  background-image: url('../assets/images/biggest-hacks.jpg');
+}
+
+html.drupalorg body {
+    background-image: url('../assets/images/drupalorg.jpg');
+}
+
+html.wordpress body {
+    background-image: url('../assets/images/wordpress.jpg');
+}
+
+html.hackers body {
+    background-image: url('../assets/images/19g2zgshh3l60gif.gif');
+}
+
+html.log body {
+    background-image: url('../assets/images/logs.jpg');
+}
+
+html.phpmyadmin body {
+    background-image: url('../assets/images/phpmyadmin.jpg');
+}
+
+html.skype body {
+    background-image: url('../assets/images/phpmyadminomfgbbq.jpg');
+}
+
+html.sa05 body {
+    background-image: url('../assets/images/sa05.jpg');
+}
+
+html.greg body {
+    background-image: url('../assets/images/5895550785_5f16285eda_b.jpg');
+}
