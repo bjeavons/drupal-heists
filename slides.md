@@ -279,19 +279,6 @@ shared hosting
 * audit user roles & permissions
 
 ---
-.image .greg
-
-<cite>https://www.flickr.com/photos/ezrabg/5895550785/</cite>
-
----
-
-### Drupal Security
-
-* Greg's session this afternoon
-* Cracking Drupal book
-* drupal.org/writing-secure-code
-
----
 
 ## plan for the worst
 
@@ -352,3 +339,13 @@ shared hosting
  * lb.cm/incident
 * Writing secure code
  * drupal.org/writing-secure-code
+
+## credits and thanks
+
+* Joe Shindelar
+ * https://drupalize.me/blog/201501/being-prepared-when-everything-goes-wrong
+* Michael Hess and Greg Knaddison
+ * ideas, feedback, and support
+* slide text
+ * Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+ * http://creativecommons.org/licenses/by-sa/4.0/
