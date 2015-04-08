@@ -340,7 +340,9 @@ shared hosting
 * Writing secure code
  * drupal.org/writing-secure-code
 
-## credits and thanks
+---
+
+## credits & thanks
 
 * Joe Shindelar
  * https://drupalize.me/blog/201501/being-prepared-when-everything-goes-wrong
