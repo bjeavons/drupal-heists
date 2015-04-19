@@ -325,7 +325,7 @@ shared hosting
 * internal & external
 * leadership
 * legal implications
-* be carefull about external messaging
+* be careful about external messaging
 
 % watch out for links in emails
 
