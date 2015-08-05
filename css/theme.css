@@ -235,3 +235,8 @@ html.fill body {
     background-size: 100px 100px;
     background-color: #2B212C;
 }
+
+html.disclaimer body {
+  background: black;
+  background-color: black;
+}

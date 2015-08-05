@@ -9,6 +9,8 @@
 
 <cite>https://www.flickr.com/photos/roadsidepictures/2923629922</cite>
 
+% 110MM records lost, cost $162MM
+
 ---
 .quote
 
@@ -16,14 +18,7 @@
 <cite>http://www.bloomberg.com/bw/articles/2014-03-13/target-missed-alarms-in-epic-hack-of-credit-card-data
 </cite>
 
----
-.image .imagetext .hackers
-
-## agenda
-
-* hackers gonna hack
-* why they hack
-* what you do about it
+% 6 months earlier installed, $1.6MM detection tools, 24/7 team spotted but officials did nothing
 
 ---
 
@@ -35,14 +30,38 @@
 * @benswords on Twitter
 
 ---
+.image .imagetext .hackers
 
-## story time
+## agenda
 
-% all of the following based on real stories
+* how you got hacked
+* why the hack
+* what to do about it
+
+% goal take some mystery out of hacks, give overview of proactive & reactive, forensics & tools
+
+---
+.testpattern
+
+% begin with a story, its a tragedy
+
+---
+.disclaimer
+
+The following is based on actual events. Only the names, locations and events have been changed.
+
+% this and other examples actually happened
+
+---
+.image .hero
+
+% meet our hero
 
 ---
 
-## you're working on your website
+### workin' on your website
+
+% here is our hero, working on the website
 
 ---
 .image .php
@@ -56,12 +75,14 @@
 
 ---
 
-### you stumble upon something odd
+### stumbles upon something odd
 
 % out of the ordinary
 
 ---
 .image .filesshell
+
+% next to index.php
 
 ---
 .image .shell
@@ -71,7 +92,7 @@
 ---
 .image .shellbrowser
 
-% feeling worse
+% feeling scared
 
 ---
 
@@ -80,18 +101,35 @@
 % scared
 
 ---
-.image .imagetext .hacked
-
-### you’ve been hacked
+.image .scared
 
 ---
+.quote
+
+>"The script is a backdoor, capable of downloading + injecting + installing new binaries/processes into the system."
+<cite>actual developer who found shell</cite>
+
+---
+.image .imagetext .hacked
+
+### you've been hacked
+
+---
+.image .over
+
+% told you it was a tragedy
+
+---
+.image .imagetext .everyone
 
 ## everyone gets hacked
 
 ---
 .image .biggest
 
-% target, anthem, sony, jpmorgan chase, apple, sony again, nytimes
+<cite>http://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/</cite>
+
+% target, anthem, sony, jpmorgan chase, apple, sony again, nytimes, OPM, & not just the big companies
 
 ---
 .quote
@@ -102,6 +140,11 @@
 
 ---
 .image .drupalorg
+
+---
+.image .pwned
+
+% side note
 
 ---
 .image .wordpress
@@ -115,17 +158,17 @@
 
 ## why the hack?
 
-* money
-* steal private data
+* money & private data
 * damage reputation
-* espionage
-* lulz
+* make a statement & lulz
 
-% "Internal employees, business partners, and collusion threats make up less than 10 percent of overall data thieves"
+% "Internal employees, business partners, and collusion threats make up less than 10 percent of overall data thieves" - verizon study
 
 ---
 
 ## how you were hacked
+
+% get back to our story
 
 ---
 .image .shell
@@ -142,10 +185,14 @@
 ---
 .image .log
 
+% webservers record visitor access
+
 ---
 .text
 
 grep “content-in.php” access_log
+
+% we can look for access to the shell
 
 ---
 
@@ -154,9 +201,9 @@ grep “content-in.php” access_log
 * "GET /content-in.php HTTP/1.1" 200 427
 * "POST /content-in.php HTTP/1.1" 200 329
 
----
+%
 
-## ask questions
+---
 
 * how did it get installed?
 * what else happened?
@@ -166,18 +213,20 @@ grep “content-in.php” access_log
 
 grep “140.211.10.16” access_log
 
+% access logs have IP address
+
 ---
 
+* "GET /content-in.php HTTP/1.1" 200 427
 * "GET /phpmyadmin/index.php HTTP/1.0" 200
 * "POST /phpmyadmin/tbl_replace.php HTTP/1.0" 200
 * "POST /user HTTP/1.0" 302
 * "GET /user/1 HTTP/1.0" 200
 
----
-.image .phpmyadmin
+% see all traffic from that IP address
 
 ---
-.image .skype
+.image .phpmyadmin
 
 ---
 .image .imagetext .skype
@@ -193,6 +242,9 @@ grep “140.211.10.16” access_log
 * "GET /user/1 HTTP/1.0" 200
 
 ---
+.image .facepalm
+
+---
 
 ### what we know
 
@@ -201,10 +253,10 @@ grep “140.211.10.16” access_log
 * attacker logged into Drupal
 * used Drupal’s PHP filter to install PHP shell
 
----
-.quote
+% before how to deal with it
 
->"The script is a backdoor, capable of downloading + injecting + installing new binaries/processes into the system."
+---
+.image .over
 
 ---
 
@@ -217,37 +269,30 @@ running out-of-date software
 
 w/ known vulnerabilities
 
-% ubercart xss to change payment URL
+% attacker just reads changelogs, ubercart xss to change payment URL, flash vulnerability
 
 ---
-.text
+.image .neighborhood
 
-3rd party plugin that writes files
-
-% flash vuln
+% whole neighborhood, shared hosting, settings.php
 
 ---
-.text
-
-shared hosting
-
-% read settings.php
+.image .drupalgeddon
 
 ---
 .image .sa05
 
-% sa05 was a big deal, probably the worse
-% but 7 years
+% sa05 was a big deal, probably the worse, 7 years since last
 
 ---
 .image .hackers
 
-% pause
+% pause, we were hacked, found out why, could we have prevented?
 
 ---
-.image .imagetext .hackers
+.image .imagetext .ironman
 
-### stay ahead of the pack
+### secure yourself
 
 % lion and the gazelle
 
@@ -259,6 +304,7 @@ shared hosting
 * secure account access
 * secure default config
 * SFTP/SSH & HTTPS
+* educate your team
 * (theres lots more to do)
 
 ---
@@ -272,15 +318,45 @@ shared hosting
 
 ---
 
-### secure account access
+## stay up-to-date
+
+* @drupalsecurity
+* RSS feed & mailing list
+* core's update notifier
+* do this for all software
+
+---
+
+## test & apply
+
+* version control
+* config management
+* continuous integration
+
+---
+
+## secure accounts
 
 * strong passwords
 * two-factor authentication
 * audit user roles & permissions
 
+% audit contractors, educate users
+
+---
+
+### strong passwords
+
+* lastpass / 1password
+* password policy / password strength
+
+% rotate system passwords
+
 ---
 
 ## plan for the worst
+
+% do all those proactive things, and more, but also plan for being hacked
 
 ---
 
@@ -293,41 +369,20 @@ shared hosting
 * documentation
 * reporting
 * forensics
-
-% lets apply this to how we got hacked
+* drupalize.me/node/1974
 
 ---
-.image .imagetext .files
-
-## discovery
-
-% we stumbled upon the php shell
+.image .hackers
 
 ---
 
-### preserve evidence
+## recap
 
-* server image
-* db & code backups
-* logs
-
----
-
-## documentation
-
-* have a lot to communicate
-* there are legal implications
-
----
-
-## reporting
-
-* internal & external
-* leadership
-* legal implications
-* be careful about external messaging
-
-% watch out for links in emails
+* everyone gets hacked
+* stay up to date
+* use strong passwords
+* secure default config
+* plan for the worst
 
 ---
 
@@ -336,18 +391,14 @@ shared hosting
 * Your site got hacked, now what?
  * drupal.org/node/2365547
 * Incident response blog post
- * lb.cm/incident
+ * drupalize.me/node/1974
 * Writing secure code
  * drupal.org/writing-secure-code
 
 ---
 
-## credits & thanks
+## thanks
 
-* Joe Shindelar
- * https://drupalize.me/blog/201501/being-prepared-when-everything-goes-wrong
-* Michael Hess and Greg Knaddison
- * ideas, feedback, and support
 * slide text
  * Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
  * http://creativecommons.org/licenses/by-sa/4.0/

@@ -26,12 +26,24 @@ html.target body {
   background-image: url('../assets/images/target.jpg');
 }
 
+html.testpattern body {
+    background-image: url('../assets/images/testPattern.png');
+}
+
+html.hero body {
+    background-image: url('../assets/images/hero.gif');
+}
+
 html.php body {
     background-image: url('../assets/images/code.jpg');
 }
 
 html.files body {
     background-image: url('../assets/images/dir.jpg');
+}
+
+html.scared body {
+    background-image: url('../assets/images/scared.gif');
 }
 
 html.filesshell body {
@@ -50,8 +62,28 @@ html.hacked body {
     background-image: url('../assets/images/hacker_601.gif');
 }
 
+html.over body {
+    background-image: url('../assets/images/over.gif');
+}
+
+html.everyone body {
+    background-image: url('../assets/images/everyone.gif');
+}
+
 html.biggest body {
   background-image: url('../assets/images/biggest-hacks.jpg');
+}
+
+html.neighborhood body {
+    background-image: url('../assets/images/neighborhood.gif');
+}
+
+html.drupalgeddon body {
+    background-image: url('../assets/images/drupalgeddon.png');
+}
+
+html.pwned body {
+    background-image: url('../assets/images/beenpwned.jpg');
 }
 
 html.drupalorg body {
@@ -78,10 +110,14 @@ html.skype body {
     background-image: url('../assets/images/phpmyadminomfgbbq.jpg');
 }
 
+html.facepalm body {
+    background-image: url('../assets/images/facepalm.gif');
+}
+
 html.sa05 body {
     background-image: url('../assets/images/sa05.jpg');
 }
 
-html.greg body {
-    background-image: url('../assets/images/5895550785_5f16285eda_b.jpg');
+html.ironman body {
+    background-image: url('../assets/images/ironman.gif');
 }
