@@ -2,7 +2,8 @@
 .main-title
 
 # Drupal Heists
-### Security Stories & Practical Plans
+
+#### github.com/bjeavons/drupal-heists
 
 ---
 .image .target
